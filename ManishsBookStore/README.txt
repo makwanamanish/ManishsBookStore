@@ -19,6 +19,8 @@ Action Items:
 Modified the default welcome message tested..
 reveiew the rounte pattern in Satartup.cs
 
+1631
+creat README.md file in the github and pull it in the visual Studio.
 
 
 
