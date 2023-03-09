@@ -24,6 +24,22 @@ creat README.md file in the github and pull it in the visual Studio.
 
 
 
+2023-03-09
+1433
+Edited the bootstrap_bk.css for backup purpose..
+after that selected theme from bootwatch
+added bootstraps.min.css folder
+
+1448
+added code to the bootstraps/css/bootstraps.min.cs...
+then try to run the app..
+
+
+
+
+
+
+
 
 
 
