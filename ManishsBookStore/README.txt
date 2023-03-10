@@ -1,4 +1,5 @@
-﻿2023-03-03
+﻿
+2023-03-03
 1545
 Started the Assignment 2 on the lab computer.
 Set up the ASP>NET MVC w/ core 3.1 (out-of-support)
@@ -33,6 +34,20 @@ added bootstraps.min.css folder
 1448
 added code to the bootstraps/css/bootstraps.min.cs...
 then try to run the app..
+ 
+2023-03-10
+1130
+The nav class has changed from navbar-light to navbar-dark and bg-white to bg-primary in _Layout.cshtml in views folder.
+Remove text-dark from line 23 in _Layout.cshtml.
+Then added aditional properties to the footer class.
+Remove the text-dark in _LoginPartial.cshtml file and then run the app.
+Added additional stylesheets and scripts from the css_js.txt file in _Layout.cshtml file.
+
+1146
+Added dropdown to the navbar and change the dropdown name to content Management.
+
+
+
 
 
 
