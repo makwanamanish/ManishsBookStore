@@ -1,4 +1,4 @@
-using ManishsBookStore.Data;
+//using ManishsBookStore.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -12,6 +12,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ManishsBookStore.DataAccess.Data;
 
 namespace ManishsBookStore
 {
@@ -63,7 +64,7 @@ namespace ManishsBookStore
                 endpoints.MapControllerRoute(
                     name: "default",
                     // Here is the default route pattern.
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{area=Customer}/{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
             });
         }
