@@ -1,12 +1,13 @@
 ﻿using ManishsBooks.DataAccess.Repository.IRepository;
 using ManishsBooks.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.VisualStudio.Web.CodeGeneration.Contracts.Messaging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ManishsBookStore.Areas.Admin.Controllers
+namespace RushabhsBookStore.Areas.Admin.Controllers
 {
     [Area("Admin")]
     public class CategoryController : Controller
@@ -24,7 +25,7 @@ namespace ManishsBookStore.Areas.Admin.Controllers
 
         public IActionResult Upsert(int? id) //Action method for Upsert
         {
-            Category category = new Category(); //using RushabhsBooks.Models;
+            Category category = new Category(); 
             if (id == null)
             {
                 //This is for Create
@@ -76,11 +77,11 @@ namespace ManishsBookStore.Areas.Admin.Controllers
             var objFromDb = _unitOfWork.Category.Get(id);
             if (objFromDb == null)
             {
-                return Json(new { success = false, message = "Error while deleting." });
+                return Json(new { success = false, message = "Error while deleting" });
             }
             _unitOfWork.Category.Remove(objFromDb);
             _unitOfWork.Save();
-            return Json(new { success = true, message = "Delete Successful!" });
+            return Json(new { success = true, message = "Delete Successful" });
         }
         #endregion
     }
