@@ -24,7 +24,6 @@ reveiew the rounte pattern in Satartup.cs
 creat README.md file in the github and pull it in the visual Studio.
 
 
-
 2023-03-09
 1433
 Edited the bootstrap_bk.css for backup purpose..
@@ -64,10 +63,10 @@ ApplicationDbContext.cs's namespace was changed, and the class1.cs file was dele
 Manish's Books.Models is now located in the Models folder.
 
 In the.DataAccess and.Models project, a project reference was added.
-Namespace changes to.Models.ViewModels and renaming the Models folder to ViewModels are also recommended.
+Namespace changes to .Models.ViewModels and renaming the Models folder to ViewModels are also recommended.
 
-Run the programme after making changes to the Startup.cs file and check for eroors. 
-Error.cshtml now refers to.Models instead of.Models.test the application using ViewModels.ErrorViewModels.
+Run the program after making changes to the Startup.cs file and check for eroors. 
+Error.cshtml now refers to .Models instead of .Models.test the application using ViewModels.ErrorViewModels.
 Additional Identity.Nuget package for entities
 after which successfully build the project.
 
@@ -130,7 +129,6 @@ The Irepository folder now contains the UnitOfWork.cs interface.
 Changed UnitOfWork.cs was integrated into the repository folder along with modified UnitOfWork.cs.
 In the startup.cs code, UnitOfWork and IUnitOfWork were introduced.
 
-Part-3
 Created CategoryController.cs in the controller folder as well as the Controller folder in the admin.
 then add the provided code to CategoryController.cs.To Views, add the Category folder.
 
@@ -145,6 +143,8 @@ To enable the edit and remove buttons, the CategoryController.cs file
 contains code that calls the category.js upsert action in the Index.cshtml.
 
 20-04-2023
+
+1605
 
 create and back to list button (_CreateAndListButton.cshtml)
 A second partial view (_EditAndBackToListButton.cshtml) was made.
@@ -172,6 +172,38 @@ created a CoverType folder inside the Views folder.
 
 Added CoverType.js to js as well.
 Launch the programme.
+
+Product.cs was created and added to Manish's Books.Model.
+and made this product updated.
+
+1815
+
+updated the database and completed the migration into the PM console.
+Then make the author, ISBN, and title requirements.
+
+Execute the Add-migration AddValidationToProduct migration operation
+and update the database using the update-database migration procedure.
+IProductRepository interface and ProductRepository class have been added to the IRepository subdirectory.
+
+product-updated UnitofWork and IUnitOfWork.
+After that, the application was built without any eror.
+created and modified the controller's ProductController.cs file.
+
+ProductVM.cs was produced into viewmodels.
+the ProductController.cs file has been modified.
+
+updated both the product's index.cshtml file and the category.js file, along with product.js.
+product link added to the _Layout.cshtml file.
+
+Run the application to make sure it is successful.
+created the Upsert.cshtml file in Product, then edited it using the provided code.
+
+created a modest account.Clound then made the proposed usage of my API.
+changes upsert.cshtml after that.
+added a new products folder to the pictures folder and a new images folder into wwwroot.
+
+then removed the comment from ProductController.cs's code.
+ProductController.cs has been modified.
 
 
 
